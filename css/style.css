@@ -1,3 +1,11 @@
+.cut {
+    border-radius: 100%;
+}
+    
+.fullscreen {
+    height: 100vh;
+}
+
 @media screen and (min-width: 1280px) {
     body {
         margin: 0 !important;
@@ -28,11 +36,6 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
-        width: 100vw;
-    }
-    
-    .fullscreen {
-        height: 100vh;
     }
     
     .main-box {
@@ -55,7 +58,7 @@
     }
     
     .links {
-        width: 32.55rem;
+        width: 35rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -91,6 +94,10 @@
     .botoes h3 {
         width: 23.6rem;
         text-align: center;
+    }
+
+    .copyright {
+        color: white;
     }
 }
 
@@ -183,5 +190,9 @@
         margin-top: 0;
         width: 100%;
         text-align: center;
+    }
+
+    .copyright {
+        color: white;
     }
 }
