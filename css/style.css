@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .cut {
     border-radius: 100%;
 }
@@ -42,6 +46,7 @@
         background-color: rgba(112, 112, 112, 0.7);
         border-radius: 20px;
         border: 2px solid #ffffff;
+        box-sizing: border-box;
         margin-top: 40px;
         width: 35rem;
         display: flex;
@@ -62,33 +67,41 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2rem;
     }
     
     .links a {
         text-decoration: none;
         color: black;
         padding: 0.5rem 0;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
     }
     
     .botoes {
         padding: 0 0.5rem;
         background-color: #f5f5dc;
-        border: 1px solid white;
         border-radius: 50px;
         width: 30rem;
         height: 4rem;
         display: flex;
         flex-direction: row;
         align-items: center;
+        box-sizing: border-box;
     }
     
     .botoes:hover {
-        background-color: rgba(167, 167, 128, 0.7);
+        background: rgba(255, 255, 255, 0.5);
+        border: 1px solid rgb(42, 42, 42);
     }
     
     .botoes img {
         height: 3rem;
         width: 3rem;
+        border-radius: 100%;
     }
     
     .botoes h3 {
@@ -116,19 +129,20 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
-        width: 100vw;
+        min-height: 100vh;
+        width: 97vw;
     }
 
     .main-box {
         background-color: rgba(112, 112, 112, 0.7);
         border-radius: 20px;
         border: 2px solid #ffffff;
-        width: 20rem;
+        width: 89%;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2rem 0;
+        margin-top: 5rem;
     }
 
     .links {
@@ -157,7 +171,8 @@
     }
     
     .botoes:hover {
-        background-color: rgba(167, 167, 128, 0.7);
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
     }
 
     .botoes h3 {
