@@ -25,10 +25,6 @@ a {
   cursor: not-allowed;
 }
 
-.active {
-  font-style: italic;
-}
-
 .img-logo {
   height: 3rem;
   width: 3rem;
@@ -87,9 +83,10 @@ a {
 }
 
 .main-title {
-  text-align: left;
-  margin-top: 2rem;
-  width: 50%;
+  margin-bottom: 0;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 .sub-title {
@@ -99,18 +96,12 @@ a {
   text-align: center;
 }
 
-.main {
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  min-height: calc(93vh - 10rem);
-}
-
-.main-justified {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  min-height: calc(93vh - 10rem);
 }
 
 .main-box {
@@ -135,34 +126,15 @@ a {
 }
 
 .content-holder {
-  margin-top: 1.5rem;
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  width: 50%;
-}
-
-.content-holder p {
-  text-align: justify;
-}
-
-.content-holder p a:hover {
-  text-decoration: underline;
+  gap: .5rem;
 }
 
 .profile-img {
   width: 6rem;
   height: 6rem;
   border-radius: 100%;
-  object-fit: cover;
-}
-
-.profile-home-img {
-  margin-top: 2rem;
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -185,39 +157,6 @@ a {
   height: 3rem;
   padding: 2rem 0;
   border-radius: 50px;
-}
-
-.link-curriculum {
-  height: 3rem;
-  margin-top: 3rem;
-}
-
-.button-home {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
-  padding: 0 .5rem;
-  height: 3rem;
-  width: 18rem;
-  border-radius: 50px;
-
-  background: #020207;
-}
-
-.button-home:hover {
-  background: #1E1E28;
-  box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.5), 0 1px 6px 0 rgba(255, 255, 255, 0.5);
-}
-
-.button-home h3 {
-  width: 15rem;
-  text-align: center;
-}
-
-.button-home img {
-  height: 2rem;
-  width: 2rem;
 }
 
 .buttons {
@@ -276,7 +215,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-} 
+}
 
 @media screen and (max-width: 1080px) {
   .navbar {
@@ -339,21 +278,15 @@ a {
     display: none;
   }
 
-  .main {
+  .home {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     height: auto;
-    min-height: calc(100vh - 10rem);
+    min-height: calc(93vh - 10rem);
     width: 100%;
-    padding: 0 .6rem;
-  }
-
-  .main-justified {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .main-box {
@@ -369,44 +302,6 @@ a {
     background: #020207;
   }
 
-  .content-holder {
-    width: 89%;
-    margin-top: 1.5rem;
-    padding: 0 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .content-holder p {
-    text-align: justify;
-  }
-
-  .content-holder p a:hover {
-    text-decoration: underline;
-  }
-
-  .curriculum {
-    height: 2rem;
-    width: 10rem;
-    background: #999;
-
-    margin-top: 2rem;
-    border-radius: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .curriculum a {
-    height: 100%;
-    width: 100%;
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
-  }
-
   .links {
     width: 20rem;
     
@@ -418,39 +313,6 @@ a {
   .links a {
     text-decoration: none;
     padding: .3rem 0;
-  }
-
-  .link-curriculum {
-    height: 3rem;
-    margin-top: 3rem;
-  }
-
-  .button-home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    padding: 0 .5rem;
-    height: 3rem;
-    width: 18rem;
-    border-radius: 50px;
-
-    background: #020207;
-  }
-
-  .button-home:hover {
-    background: #1E1E28;
-    box-shadow: 0 1px 2px 0 rgba(255, 255, 255, 0.5), 0 1px 6px 0 rgba(255, 255, 255, 0.5);
-  }
-
-  .button-home h3 {
-    width: 15rem;
-    text-align: center;
-  }
-
-  .button-home img {
-    height: 2rem;
-    width: 2rem;
   }
 
   .buttons {
@@ -481,14 +343,6 @@ a {
     width: 2rem;
   }
 
-  .profile-home-img {
-    margin-top: 2rem;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
   .profile-img {
     width: 4rem;
     height: 4rem;
@@ -497,12 +351,6 @@ a {
   }
 
   .main-title {
-    text-align: left;
-    margin-top: 2rem;
-    width: 100%;
-  }
-
-  .main-box-title {
     font-size: 18px;
     margin-bottom: 0;
     margin-top: 10px;
